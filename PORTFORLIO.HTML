@@ -1,0 +1,39 @@
+To upload this code to GitHub, follow these steps:
+
+1. **Create a GitHub Repository**:
+    - Go to [GitHub](https://github.com) and log in.
+    - Click on the "+" icon in the top-right corner and select "New repository".
+    - Enter a repository name (e.g., `portfolio`), add a description, and choose whether it should be public or private.
+    - Click "Create repository".
+
+2. **Set Up Git Locally**:
+    - Open a terminal or command prompt.
+    - Navigate to the folder containing your `PORTFORLIO.HTML` file:
+      ```bash
+      cd "c:/Users/ishan srivastava/OneDrive/Desktop/H1"
+      ```
+    - Initialize a Git repository:
+      ```bash
+      git init
+      ```
+    - Add the file to the staging area:
+      ```bash
+      git add PORTFORLIO.HTML
+      ```
+    - Commit the file:
+      ```bash
+      git commit -m "Initial commit: Add portfolio HTML file"
+      ```
+
+3. **Push to GitHub**:
+    - Link your local repository to the GitHub repository:
+      ```bash
+      git remote add origin https://github.com/<your-username>/portfolio.git
+      ```
+    - Push the code to GitHub:
+      ```bash
+      git branch -M main
+      git push -u origin main
+      ```
+
+Your code will now be uploaded to GitHub. Replace `<your-username>` with your GitHub username.
