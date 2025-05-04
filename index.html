@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            animation: backgroundShift 10s infinite alternate;
+            padding: 0;
+            background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #00d4ff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff007a;
+        }
+        section {
+            padding: 3rem;
+            max-width: 900px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            text-align: center;
+            color: #00d4ff;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            animation: slideIn 1s ease-in-out;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            margin-top: 2rem;
+        }
+        .profile-photo {
+            display: block;
+            margin: 0 auto 1.5rem;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00d4ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        ul li strong {
+            color: #ff007a;
+        }
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ff007a;
+        }
+        .watermark {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            margin-top: 1rem;
+            background: #00d4ff;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #ff007a;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 10px #00d4ff;
+            }
+            50% {
+                box-shadow: 0 0 20px #ff007a;
+            }
+        }
+        .glowing-border {
+            border: 4px solid #00d4ff;
+            animation: glow 2s infinite;
+        }
+        .background-graphic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.3), rgba(255, 0, 122, 0.1));
+            transform: translate(-50%, -50%);
+            filter: blur(100px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-graphic"></div>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am <strong>Ishan Srivastava</strong>, a passionate developer with skills in <strong>Java, HTML, CSS, Python, JavaScript</strong>. I love creating innovative solutions and building amazing projects. Dedicated, hardworking, and committed to becoming a dependable and valuable team member. Strong problem-solving skills, excellent communication abilities, and a commitment to maintaining client satisfaction throughout the project life cycle.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> Python Snake Game - Developed a classic Snake game using Python, implementing game logic, graphics, and user input handling.</li>
+            <li><strong>Project 2:</strong> E-commerce Website - Developed the front-end of an e-commerce website using HTML, CSS, JavaScript, providing a seamless and intuitive user experience for customers.</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Internship at Acme Grade Pvt. Ltd:</strong> Developed responsive and interactive web pages using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and adhering to modern web development standards.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ishan-srivastava-26a37b215/?profileId=ACoAADZWdrIBxZjE2-n4jggdki-neWmw2KPYvH8" target="_blank">LinkedIn</a></p>
+        <p style="animation: fadeIn 1.5s ease-in-out;">GitHub: <a href="https://github.com/Coder1-gif" target="_blank">GitHub</a></p>  
+        <p>Resume: <a href="https://drive.google.com/file/d/1TwCGCZZ1fxL_2xPMKoos9o_a-uyj1IVf/view?usp=sharing" target="_blank">Resume</a></p>
+        <p>Phone: <a href="tel:+919999999999">+91 7054604726</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ishan Srivastava. All rights reserved.</p>
+    </footer>
+
+    <div class="watermark">Web Development Portfolio</div>
+</body>
+</html>
