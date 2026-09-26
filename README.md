@@ -69,6 +69,15 @@ Portfolio/
 └── Product Management Notes
 ```
 
+## 📚 Product Artifacts
+
+- [AI Product Case Study Template](docs/AI_PRODUCT_CASE_STUDY_TEMPLATE.md)
+- [AI Product Roadmap](docs/AI_PRODUCT_ROADMAP.md)
+- [AI Product Metrics](docs/AI_PRODUCT_METRICS.md)
+- [AI Assistant PRD](docs/PRD_AI_ASSISTANT.md)
+
+These artifacts show the product layer behind the technical work: discovery, requirements, AI evaluation, metrics, experimentation, and roadmap thinking.
+
 ## 🔗 Connect
 
 - **LinkedIn:** [Ishan Srivastava](https://www.linkedin.com/in/ishan-srivastava-26a37b215)
